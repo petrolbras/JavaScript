@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos DOM</title>
     <style>
-
         div#area {
             background: rgb(103, 216, 103);
             color: white;
@@ -17,18 +16,32 @@
             font: normal 26pt Arial;
             margin: auto;
         }
-
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()">
+    <div id="area">
         <p>Interaja</p>
     </div>
 
     <script>
+        var area = document.getElementById('area')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+
+
        function clicar() {
-            var area = document.getElementById('area')
             area.innerText = 'Clicou!' 
+            area.style.background = 'red'
+        }
+
+        function entrar() {
+            area.innerText = 'Entrou!' 
+        }
+
+        function sair() {
+            area.innerText = 'Saiu!'
+            area.style.background = 'green'
         }
     </script>
 </body>
