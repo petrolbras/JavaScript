@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(126, 209, 126);
+            color: rgb(43, 42, 42);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nacionalidades</h1>
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Registrar" onclick="pais()">
+    <div id="res"></div>
+    <script>
+        function pais() { 
+            var txtp = document.getElementById('txtpais')
+            var res = document.getElementById('res')
+            var nac = (txtp.value)
+            res.innerHTML = `Sua nacionalidade é de ${nac}`
+            if (nac == 'Brasil') {
+                res.innerHTML += `<br>Você é Brasileiro!`
+            } else {
+                res.innerHTML += `<br>Você é Estrangeiro!`
+            }
+        }
+    </script>
+</body>
+</html>
