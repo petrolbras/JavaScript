@@ -1,10 +1,20 @@
 function contar() {
-var ini = document.getElementById('iniciotxt')
-var fim = document.getElementById('fimtxt')
-// var pas = document.getElementById('passotxt')
-var n1 = Number(ini.value)
-var n2 = Number(fim.value)
-var s = n1 + n2
-res.innerHTML = `A sua conta tem valor ${s}`
-}
+    let ini = document.getElementById('iniciotxt')
+    let fim = document.getElementById('fimtxt')
+    let passo = document.getElementById('passotxt')
+    let res = document.getElementById('res')
+    
+    if (ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
+        res.innerHTML = ('[ERRO] Não é possível realizar essa conta!')
+    }  else {
+        res.innerHTML = 'Contando: '
+        let i = Number(ini.value)
+        let f = Number(fim.value)
+        let p = Number(passo.value)
 
+        for(let c = i; c <= f; c += p) {
+            res.innerHTML += `${c} `
+        }
+    }
+
+}
