@@ -19,6 +19,15 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.199);
 }
 
+input {
+    margin-top: 20px;
+    padding: 2px;
+}
+
+select {
+    margin-top: 30px;
+}
+
 footer {
     color: white;
     text-align: center;
