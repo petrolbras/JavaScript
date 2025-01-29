@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+    <section>
+        <div>
+            <form>
+                <label for="numtxt">Número (Entre 1 a 100): </label>
+                <input type="number" name="numtxt" id="numtxt">
+                <input type="submit" value="Adicionar" class="submit" onclick="adicionar()">
+            </form>
+        </div>
+        <div>
+            <select name="selectxt" id="selectxt" size="10"></select>
+        </div>
+        <div>
+            <input type="submit" value="Finalizar" class="submit" onclick="Finalizar()">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVídeo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
