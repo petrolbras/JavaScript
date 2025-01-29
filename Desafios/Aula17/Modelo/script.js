@@ -6,7 +6,12 @@ function adicionar() {
         alert('Não é possível fazer a conta!')
     } else if (num.value < 1 || num.value > 100) {
         alert('Esses valores são pequenos/grandes demais!')
+    } else {
+        let n = Number(num.value)
+        
+        
     }
+
 } 
 
 function Finalizar() {
