@@ -1,18 +1,19 @@
-let num = document.getElementById('numtxt')
-let lista = document.getElementById('selectxt')
-let res = document.getElementById('res')
+let num = document.querySelector('input#fnum')
+let lista = document.querySelector('select#flista')
+let res = document.querySelector('div#res')
 let valores = []
 
 function isNumero(n) {
     if(Number(n) >= 1 && Number(n) <= 100) {
-        return true
+        return true 
     } else {
         return false
     }
+
 }
 
 function inLista(n, l) {
-    if(l.indexOf(Number(n)) != -1) {
+    if (l.indexOf(Number(n)) != -1) {
         return true
     } else {
         return false
@@ -25,14 +26,16 @@ function adicionar() {
         let item = document.createElement('option')
         item.text = `Valor ${num.value} adicionado.`
         lista.appendChild(item)
-        res.innerHTML= ''
+        res.innerHTML = ''
     } else {
         window.alert('Valor inválido ou já foi encontrado na lista!')
     }
 
     num.value = ''
     num.focus()
-}
+    
+} 
+
 
 function Finalizar() {
     if (valores.length == 0) {
@@ -57,9 +60,8 @@ function Finalizar() {
         res.innerHTML += `<p> Ao todo, temos ${tot} números cadastrados.</p>`
         res.innerHTML += `<p> O maior valor informado foi o ${maior}.</p>`
         res.innerHTML += `<p> O menor valor informado foi o ${menor}.</p>`
-        res.innerHTML == `<p> Somando todos os valores, temos ${soma}. </p>`
-        res.innerHTML == `<p> A média dos valores digitados é ${media}</p>`
+        res.innerHTML += `<p> Somando todos os valores, temos ${soma}. </p>`
+        res.innerHTML += `<p> A média dos valores digitados é ${media}</p>`
     }
 
 }
-

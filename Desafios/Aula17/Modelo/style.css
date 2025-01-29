@@ -19,16 +19,7 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.199);
 }
 
-div {
-    padding: 10px;
-}
-
-.submit {
-    width: 6em;
-    height: 2em;
-}
-
-#selectxt {
+select#flista { 
     width: 150px;
 }
 
