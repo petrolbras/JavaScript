@@ -1,5 +1,5 @@
 let energia=100
-let clima="chovendo"
+let clima="chuvoso"
 
 if(energia > 70 && clima=="sol") {
     console.log("Vou a praia")

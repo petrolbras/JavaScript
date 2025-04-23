@@ -1,4 +1,4 @@
-let colocação=5
+let colocação = 5
 
 switch(colocação) {
     case 1:
@@ -16,5 +16,4 @@ switch(colocação) {
     default:
         console.log("Não subiu ao pódio")
         break
-
 }

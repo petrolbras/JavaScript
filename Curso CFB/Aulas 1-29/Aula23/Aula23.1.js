@@ -7,4 +7,4 @@ function soma(...valores){
     return res
 }
 
-console.log(soma(10,5))
+console.log(soma(2,5))
